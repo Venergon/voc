@@ -365,7 +365,7 @@ public class Object extends java.lang.RuntimeException implements org.python.Obj
 
     public void __setattr__(java.lang.String name, org.python.Object value) {
         if (!this.__setattr_null(name, value)) {
-            throw new org.python.exceptions.AttributeError("'" + this + "' object has no attribute '" + name + "'");
+            throw new org.python.exceptions.AttributeError("attribute '" + name + "' of '" + this + "' objects is not writable")
         }
     }
 
