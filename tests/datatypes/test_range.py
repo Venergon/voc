@@ -88,26 +88,6 @@ class UnaryRangeOperationTests(UnaryOperationTestCase, TranspileTestCase):
 class BinaryRangeOperationTests(BinaryOperationTestCase, TranspileTestCase):
     data_type = 'range'
 
-    not_implemented = [
-        'test_direct_eq_range',
-        'test_direct_ne_range',
-
-        'test_eq_range',
-
-        'test_modulo_complex',
-
-        'test_multiply_bytearray',
-        'test_multiply_bytes',
-        'test_multiply_list',
-        'test_multiply_str',
-        'test_multiply_tuple',
-
-        'test_ne_range',
-
-        'test_subscr_bool',
-        'test_subscr_slice',
-    ]
-
     not_implemented_versions = {
         'test_subscr_None': (3.4,),
         'test_subscr_NotImplemented': (3.4,),
@@ -128,7 +108,3 @@ class BinaryRangeOperationTests(BinaryOperationTestCase, TranspileTestCase):
 
 class InplaceRangeOperationTests(InplaceOperationTestCase, TranspileTestCase):
     data_type = 'range'
-
-    not_implemented = [
-        'test_modulo_complex',
-    ]
